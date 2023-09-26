@@ -9,20 +9,38 @@
   <!-- style -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&family=Noto+Sans+JP&family=Stick&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
   <header>
-    <div>
-      <h1><img class="logo" src="img/logo.svg" alt="リリコ・イラスト工房"></h1>
-    </div>
-    <nav>
-      <li>ABOUT</li>
-      <li>GALLERY</li>
-      <li>CONTACT</li>
-      <li><i class="fa-solid fa-bag-shopping"></i></li>
-      <li><i class="fa-brands fa-instagram"></i></li>
+    <nav class="header ly_wrap">
+      <div class="logo">
+        <h1><a href="#"><img class="logo__image" src="img/logo.svg" alt="リリコ・イラスト工房"></a></h1>
+      </div>
+      <ul class="menu">
+        <li><a class="menu__link" href="about.html">
+          <div class="menu__box">ABOUT</div>
+        </a></li>
+        <li><a class="menu__link" href="gallery.html">
+          <div class="menu__box">GALLERY</div>
+        </a></li>
+        <li><a class="menu__link" href="contact.html">
+          <div class="menu__box">CONTACT</div>
+        </a></li>
+        <li><a href="#" class="menu__link">
+          <div class="menu__box">
+            <!-- <img width="32px" height="32px" src="img/icon/shop.svg" alt="shop"> -->
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </a></li>
+        <li><a href="#" class="menu__link">
+          <div class="menu__box"><i class="fa-brands fa-instagram"></i></div>
+        </a></li>
+      </ul>
     </nav>
   </header>
 
@@ -44,22 +62,82 @@
         </div>
       </div>
     </section>
-    <section id="news">
-    </section>
-    <section id="about">
 
+    <section id="news" class="ly_section">
+      <h2 class="heading">NEWS</h2>
+      <div class="news ly_wrap">
+        <div class="news__text">
+          <h3 class="news__heading ly_h3">原田りりこ展「I Love You 再開の夏2023」</h3>
+          <p>会場：ココラボラトリー http://cocolab.net<br>
+            日時：7/5㈬～7/9㈰ 11:00 ～ pm7:00※最終日pm5:00まで<br>
+            場所：秋田市「ココラボラトリーギャラリー」<br>
+            住所：秋田市大町3丁目1-12 川又中央ビル１F<br>
+            Tel/Fax ：018-866-1559<br>
+            <br>
+            4年ぶりの個展開催。緊張とワクワク感でいっぱいです。皆さんにとってもコロナ禍での4年間は色々な事があり想いがあったことと察します。「I Love You」は好きな人、大切な人、側にいる色んな方へのメッセージを一言で表現しちゃいました。「再会の夏」です。RiRiKoワールドでお会いしましょう。楽しみにしてます。<br> 
+            原田りりこ</p>
+        </div>
+        <div class="news__image">
+          <img src="img/news_sample.jpg" alt="I Love You 再開の夏2023">
+        </div>
+      </div>
     </section>
+    
+    <section id="about" class="ly_section">
+      <h2 class="heading">ABOUT</h2>
+      <div class="about ly_wrap">
+        <div class="about__text">
+          <div class="about__name">
+            <h3 class="about__main_name">原田 りりこ</h3>
+            <span class="about__sub_name">Harada Ririko</span>
+          </div>
+          <div class="about__profile">
+            <p>秋田県、能代市在住のイラストレーター。<br>
+              アクリル絵具で笑いをテーマに、小麦色に日焼けした女性たちの、心の奥からあふれるような笑顔を素直に表現した作品を目指す。</p>
+          </div>
+        </div>
+        <div class="about__image">
+          <img src="img/point/usagi_with_paint.webp">
+        </div>
+      </div>
+    </section>
+
     <section id="instagram">
+      <div class="instagram">
 
+      </div>
     </section>
+
   </main>
   
   <footer>
-
+    <div class="footer">
+      <div class="footer__image"><img src="img/point/usagi.png"></div>
+      <div class="footer__address">
+        <div class="footer__logo"><img src="img/ririko_illustraion_studio.svg" alt="リリコ・イラスト工房"></div>
+        <address>
+          <p>016-0179 秋田県能代市浅内17</p>
+          <p>17 Asanai, Noshiro-shi, Akita Zip: 016-0179, Japan</p>
+          <p>TEL:<a href="tel:+0185520232">0185-52-0232</a>　FAX:0182-52-0352</p>
+        </address>
+      </div>
+      <div class="footer__sns">
+        <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+        <div><a href="contact.html"><i class="fa-regular fa-envelope"></i></a></div>
+      </div>
+    </div>
+    <small class="copyright">
+      <div class="copyright__link"><a href="privacy_policy.html">privacy policy</a></div>
+      <div class="copyright__text">copyright © Ririko Harada. All right reserved.</div>
+    </small>
   </footer>
-  <div class="scroll">
-    
+
+  <div id="scroll" class="scroll">
+    <a href="#" class="scroll__image">
+      <img src="img/top.png" alt="トップへ戻る">
+    </a>
   </div>
+
   <script src="https://kit.fontawesome.com/16f146a8c0.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>

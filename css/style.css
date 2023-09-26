@@ -1,16 +1,128 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2em;
+}
+a:link{
+  color: #3b4b6b;
+}
+a:hover{
+  color: #262759;
+}
+a:active{
+  color: #262759;
+}
+a:visited{
+  color: #000;
+}
+nav li{
+    list-style-type: none;
+}
+nav a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
+}
+body.pace-running{
+  overflow-y: hidden;
+}
 img{
+  position:relative;
   display: block;
+  pointer-events:none;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -moz-touch-callout:none;
+  -moz-user-select:none;
+  touch-action:none;
+  user-select:none;
 }
-.splide__list{
-  max-height: 100vh;
+img::before{
+  content: "";
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background:url('img/end.png');
+  z-index:1;
+	width: 100%;
+	height: 100%;
 }
+address{
+  font-style: unset;
+}
+
+/* ly */
+.ly_wrap{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.ly_section{
+  margin-top: 6rem;
+}
+.ly_h3{
+  font-size: 24px;
+}
+
+.heading{
+  display: block;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 32px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.heading::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #FFE074;
+  margin-top: .6rem;
+}
+
+/* header */
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+  display: flex;
+}
+.menu__box{
+  padding: 1.4rem;
+}
+
+/* news */
+.news{
+  display: flex;
+  justify-content: center;
+}
+/* about */
+.about{
+  display: flex;
+  justify-content: center;
+}
+.about__name{
+  font-family: 'Stick', sans-serif;
+}
+.about__main_name{
+  font-size: 36px;
+}
+
+/* splide */
 .splide__slide img{
   margin: 0 auto;
-  max-width: calc(100% - 5rem);
+  width: calc(90%);
 }
-
-
-
 /* pace */
 .pace {
   -webkit-pointer-events: none;
