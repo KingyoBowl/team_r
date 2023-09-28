@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&family=Noto+Sans+JP&family=Stick&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous-basic.min.css" integrity="sha512-koV7rZjdkgQouiHiyzaGG1FblTuAkJVypXhzDxDNC74SdnKlGjJCkFwVcGP/wx5bwplcpnOcCy2ZJAGaVB5qmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 <style>
   img{
@@ -26,7 +27,40 @@
   }
   .gallery__content{
     margin: 1rem 2rem;
-  }
+  }.luminous {
+	max-width: 100%;
+  object-fit: contain;
+}
+img.lum-img {
+    object-fit: contain;
+    max-height: 90vh;
+    max-width: 100vw;
+    }
+    .lum-lightbox{
+      z-index: 2000;
+    }
+.lum-lightbox{
+  background: rgba(255,255,255,.6);
+}
+.lum-lightbox-inner .lum-lightbox-caption {
+    color: #000;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    }
+    .lum-lightbox-position-helper{
+      display: flex;
+    }
+    .lum-next-button:after {
+    border-right: 4px solid hsla(0,0%,4%,.8);
+    box-shadow:none;
+}.lum-previous-button:after {
+    border-left: 4px solid hsla(0,0%,4%,.8);
+    box-shadow:none;
+}
+.lum-gallery-button:after {
+    border-top: 4px solid hsla(0,0%,4%,.8);
+}
 </style>
 </head>
 <body class="body">
@@ -72,15 +106,51 @@
 <section id="gallery" class="ly_section">
   <h2 class="heading">GALLERY</h2>
   <div class="gallery__list">
-    <div class="gallery__content"><img src="gallery/Himawari no Kisetsu.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/MsK no jiyuu.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/My Life.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/Namahage.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/Natsuyasumi.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/Neko to watashi.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/Orange Iro.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/Sunrise.jpg" alt=""></div>
-    <div class="gallery__content"><img src="gallery/Tasogare no riri.jpg" alt=""></div>
+    <div class="gallery__content">
+      <a href="gallery/Himawari no Kisetsu.jpg" class="luminous">
+        <img src="gallery/Himawari no Kisetsu.jpg" alt="Himawari no Kisetsu">
+      </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/MsK no jiyuu.jpg" class="luminous">
+        <img src="gallery/MsK no jiyuu.jpg" alt="MsK no jiyuu">
+      </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/My Life.jpg" class="luminous">
+        <img src="gallery/My Life.jpg" alt="My Life">
+    </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/Namahage.jpg" class="luminous">
+      <img src="gallery/Namahage.jpg" alt="Namahage">
+    </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/Natsuyasumi.jpg" class="luminous">
+      <img src="gallery/Natsuyasumi.jpg" alt="Natsuyasumi">
+    </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/Neko to watashi.jpg" class="luminous">
+      <img src="gallery/Neko to watashi.jpg" alt="Neko to watashi">
+    </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/Orange Iro.jpg" class="luminous">
+      <img src="gallery/Orange Iro.jpg" alt="Orange">
+    </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/Sunrise.jpg" class="luminous">
+      <img src="gallery/Sunrise.jpg" alt="Sunrise">
+    </a>
+    </div>
+    <div class="gallery__content">
+      <a href="gallery/Tasogare no riri.jpg" class="luminous">
+      <img src="gallery/Tasogare no riri.jpg" alt="Tasogare no riri">
+    </a>
+    </div>
   </div>
 </section>
 
@@ -115,10 +185,21 @@
 </div>
 
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js" integrity="sha512-QzKjuc+7pitZqj28ecclxJ2XJD9l91dNb25Er0ixaqYzpMqhKGIPohYN6blR9UfSR5ETL7wncxmEvVarrVwkSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://kit.fontawesome.com/16f146a8c0.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
 <script src="script/scr.js"></script>
+<script>
+let galleryOpts = {
+  arrowNavigation: true,
+};
+let luminousOpts = {
+  caption: (elem) => {
+	return elem.children[0].getAttribute("alt");
+  },
+};
+new LuminousGallery(document.querySelectorAll('.luminous'), galleryOpts, luminousOpts);
+</script>
 </body>
 </html>

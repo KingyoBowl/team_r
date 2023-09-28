@@ -312,6 +312,9 @@ background-color: #333;
 }
 
 /* splide */
+.hide-pagination{
+  display: none;
+}
 .main__slide{
   margin: 0 auto;
   height: 60vh;
@@ -422,7 +425,36 @@ background-color: #333;
 .work__point{
   display: none;
 }
+
+/* contact  */
+.contact{
+  margin: 10vh auto 0;
+  max-width: 800px;
+}
+.form__item{
+  border: #333 1px solid;
+}
+.form__item--text{
+  width: 100%;
+}
+.form__textarea{
+  position: relative;
+  width: auto;
+  height: auto;
+}.form__image {
+  position: absolute;
+  width: 140px;
+  right: 0;
+  top: -64px;
+}
+.form__submit{
+  text-align: right;
+}
 @media screen and (min-width: 820px) {
+  .form__image {
+    width: 220px;
+    top: -120px;
+    }
   br.sp{
     display: none;
   }
