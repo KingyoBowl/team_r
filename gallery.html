@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&family=Noto+Sans+JP&family=Stick&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 <style>
   img{
@@ -22,17 +22,55 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
+    margin: 4rem auto 0;
   }
   .gallery__content{
     margin: 1rem 2rem;
   }
 </style>
 </head>
-<body>
+<body class="body">
+  <div class="body_wrap">
 
+    <header id="header" class="header">
+      <nav class="nav ly_wrap">
+        <div class="logo">
+          <h1><a href="index.html"><img class="logo__image" src="img/logo.svg" alt="リリコ・イラスト工房"></a></h1>
+        </div>
+        <ul class="menu">
+          <li><a class="menu__link" href="about.html">
+            <div class="menu__box">ABOUT</div>
+          </a></li>
+          <li><a class="menu__link" href="gallery.html">
+            <div class="menu__box">GALLERY</div>
+          </a></li>
+          <li><a class="menu__link" href="contact.html">
+            <div class="menu__box">CONTACT</div>
+          </a></li>
+          <li class="menu__sns">
+            <a href="#" class="menu__link"><div class="menu__box">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div></a>
+            <a href="#" class="menu__link"><div class="menu__box">
+              <i class="fa-brands fa-instagram"></i>
+            </div></a>
+          </li>
+          <li class="menu__sp"><a href="#" class="menu__link">
+            <div class="menu__box">PRIVACY POLICY</div>
+          </a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+  
+    <main class="ly-main">
 
-<section id="gallery">
+<section id="gallery" class="ly_section">
+  <h2 class="heading">GALLERY</h2>
   <div class="gallery__list">
     <div class="gallery__content"><img src="gallery/Himawari no Kisetsu.jpg" alt=""></div>
     <div class="gallery__content"><img src="gallery/MsK no jiyuu.jpg" alt=""></div>
@@ -46,7 +84,37 @@
   </div>
 </section>
 
+</main>
 
+<footer>
+  <div class="footer ly_section">
+    <div class="footer__logo"><img src="img/ririko_illustraion_studio.svg" alt="リリコ・イラスト工房"></div>
+    <div class="footer__image"><img src="img/point/usagi.png"></div>
+    <div class="footer__address">
+      <address>
+        <p class="footer__address--p">016-0179 秋田県能代市浅内17</p>
+        <p class="footer__address--p">17 Asanai, Noshiro-shi, Akita <br>Zip: 016-0179, Japan</p>
+        <p class="footer__address--p">TEL:<a href="tel:+0185520232">0185-52-0232</a>　<br class="sp">FAX:0182-52-0352</p>
+      </address>
+    </div>
+    <div class="footer__sns">
+      <div class="footer__sns_item"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+      <div class="footer__sns_item"><a href="contact.html"><i class="fa-regular fa-envelope"></i></a></div>
+    </div>
+  </div>
+  <small class="copyright">
+    <div class="copyright__text">copyright © Ririko Harada. <br class="sp">All right reserved.</div>
+    <div class="copyright__link"><a href="privacy_policy.html">PRIVACY POLICY</a></div>
+  </small>
+</footer>
+
+<div id="scroll" class="scroll">
+  <a href="#" class="scroll__image">
+    <img src="img/top.png" alt="トップへ戻る">
+  </a>
+</div>
+
+</div>
 
 <script src="https://kit.fontawesome.com/16f146a8c0.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
