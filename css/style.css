@@ -114,6 +114,7 @@ address{
   z-index: 1000;
   position: fixed;
   top: 0;
+  border-bottom: #999 1px solid;
 }
 .nav{
   display: flex;
