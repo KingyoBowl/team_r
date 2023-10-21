@@ -19,7 +19,11 @@
     #spotlight{
       background-color: #fff;
     }
+    .spl-theme{
+      display: none !important;
+    }
   </style>
+    <script data-pace-options='{ "restartOnPushState": false }' src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 </head>
 <body class="body">
   <div class="body_wrap">
@@ -29,7 +33,7 @@
         <div class="logo">
           <h1><a href="index.html"><img class="logo__image" src="img/logo.svg" alt="リリコ・イラスト工房"></a></h1>
         </div>
-        <ul class="menu">
+        <ul class="nav-menu">
           <li><a class="menu__link" href="about.html">
             <div class="menu__box">ABOUT</div>
           </a></li>
@@ -63,7 +67,7 @@
 
 <section id="gallery" class="ly_section">
   <h2 class="heading">GALLERY</h2>
-  <div class="gallery__list">
+  <div class="gallery__list spotlight-group" data-autohide="all" data-theme="white" data-autofit="false">
     <div class="gallery__content">
       <a href="gallery/Himawari no Kisetsu.jpg" class="spotlight" data-description="This is a description" data-button="click me" data-button-href="contact.html">
         <img class="gallery__item" src="gallery/Himawari no Kisetsu.jpg" alt="Himawari no Kisetsu">
@@ -144,7 +148,6 @@
 
 </div>
 <script src="https://kit.fontawesome.com/16f146a8c0.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
 <script src="script/scr.js"></script>
 </body>
