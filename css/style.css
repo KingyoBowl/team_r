@@ -476,6 +476,13 @@ background-color: #333;
     margin: 4rem auto 0;
   }
 @media screen and (min-width: 820px) {
+  .scroll{
+    position: fixed;
+    bottom: .4rem;
+    right: 2rem;
+    transition: .4s;
+    opacity: 0;
+  }
   /* gallery */
   .gallery__item{
     max-height: 500px;
