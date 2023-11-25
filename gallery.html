@@ -23,7 +23,7 @@
       display: none !important;
     }
   </style>
-    <script data-pace-options='{ "restartOnPushState": false }' src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script data-pace-options='{ restartOnPushState: false,minTime:100 }' src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 </head>
 <body class="body">
   <div class="body_wrap">
@@ -68,50 +68,56 @@
 <section id="gallery" class="ly_section">
   <h2 class="heading">GALLERY</h2>
   <div class="gallery__list spotlight-group" data-autohide="all" data-theme="white" data-autofit="false">
-    <div class="gallery__content">
-      <a href="gallery/Himawari no Kisetsu.jpg" class="spotlight" data-description="This is a description" data-button="click me" data-button-href="contact.html">
-        <img class="gallery__item" src="gallery/Himawari no Kisetsu.jpg" alt="Himawari no Kisetsu">
+    <div class="gallery__flex">
+      <div class="gallery__content">
+        <a href="gallery/Himawari no Kisetsu.jpg" class="spotlight" data-description="This is a description" data-button="販売中" data-button-href="contact.html">
+          <img class="gallery__item" src="gallery/Himawari no Kisetsu.jpg" alt="Himawari no Kisetsu">
+        </a>
+      </div>
+      <div class="gallery__content">
+        <a href="gallery/MsK no jiyuu.jpg" class="spotlight">
+          <img class="gallery__item" src="gallery/MsK no jiyuu.jpg" alt="MsK no jiyuu">
+        </a>
+      </div>
+      <div class="gallery__content">
+        <a href="gallery/My Life.jpg" class="spotlight">
+          <img class="gallery__item" src="gallery/My Life.jpg" alt="My Life">
       </a>
+      </div>
     </div>
-    <div class="gallery__content">
-      <a href="gallery/MsK no jiyuu.jpg" class="spotlight">
-        <img class="gallery__item" src="gallery/MsK no jiyuu.jpg" alt="MsK no jiyuu">
+    <div class="gallery__flex">
+      <div class="gallery__content">
+        <a href="gallery/Namahage.jpg" class="spotlight">
+        <img class="gallery__item" src="gallery/Namahage.jpg" alt="Namahage">
       </a>
+      </div>
+      <div class="gallery__content">
+        <a href="gallery/Natsuyasumi.jpg" class="spotlight">
+        <img class="gallery__item" src="gallery/Natsuyasumi.jpg" alt="Natsuyasumi">
+      </a>
+      </div>
+      <div class="gallery__content">
+        <a href="gallery/Neko to watashi.jpg" class="spotlight">
+        <img class="gallery__item" src="gallery/Neko to watashi.jpg" alt="Neko to watashi">
+      </a>
+      </div>
     </div>
-    <div class="gallery__content">
-      <a href="gallery/My Life.jpg" class="spotlight">
-        <img class="gallery__item" src="gallery/My Life.jpg" alt="My Life">
-    </a>
-    </div>
-    <div class="gallery__content">
-      <a href="gallery/Namahage.jpg" class="spotlight">
-      <img class="gallery__item" src="gallery/Namahage.jpg" alt="Namahage">
-    </a>
-    </div>
-    <div class="gallery__content">
-      <a href="gallery/Natsuyasumi.jpg" class="spotlight">
-      <img class="gallery__item" src="gallery/Natsuyasumi.jpg" alt="Natsuyasumi">
-    </a>
-    </div>
-    <div class="gallery__content">
-      <a href="gallery/Neko to watashi.jpg" class="spotlight">
-      <img class="gallery__item" src="gallery/Neko to watashi.jpg" alt="Neko to watashi">
-    </a>
-    </div>
-    <div class="gallery__content">
-      <a href="gallery/Orange Iro.jpg" class="spotlight">
-      <img class="gallery__item" src="gallery/Orange Iro.jpg" alt="Orange">
-    </a>
-    </div>
-    <div class="gallery__content">
-      <a href="gallery/Sunrise.jpg" class="spotlight">
-      <img class="gallery__item" src="gallery/Sunrise.jpg" alt="Sunrise">
-    </a>
-    </div>
-    <div class="gallery__content">
-      <a href="gallery/Tasogare no riri.jpg" class="spotlight">
-      <img class="gallery__item" src="gallery/Tasogare no riri.jpg" alt="Tasogare no riri">
-    </a>
+    <div class="gallery__flex">
+      <div class="gallery__content">
+        <a href="gallery/Orange Iro.jpg" class="spotlight">
+        <img class="gallery__item" src="gallery/Orange Iro.jpg" alt="Orange">
+      </a>
+      </div>
+      <div class="gallery__content">
+        <a href="gallery/Sunrise.jpg" class="spotlight">
+        <img class="gallery__item" src="gallery/Sunrise.jpg" alt="Sunrise">
+      </a>
+      </div>
+      <div class="gallery__content">
+        <a href="gallery/Tasogare no riri.jpg" class="spotlight">
+        <img class="gallery__item" src="gallery/Tasogare no riri.jpg" alt="Tasogare no riri">
+      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -147,8 +153,10 @@
 </div>
 
 </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/16f146a8c0.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
-<script src="script/scr.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+  <script src="script/scr.js"></script>
 </body>
 </html>

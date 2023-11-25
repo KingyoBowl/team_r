@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&family=Noto+Sans+JP&family=Stick&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script data-pace-options='{ restartOnPushState: false,minTime:100 }' src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 </head>
 <body class="body">
 <div class="body_wrap">
@@ -50,6 +51,11 @@
       <span></span>
       <span></span>
       <span></span>
+    </div>
+    <div class="nav-shop">
+      <a href="#" class="nav-shop__link"><div class="nav-shop__box">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </div></a>
     </div>
   </header>
 
@@ -104,11 +110,17 @@
             <span class="about__sub_name">Harada Ririko</span>
           </div>
           <div class="about__profile">
-            <p>秋田県、能代市在住のイラストレーター。<br>
+            <!-- <p>秋田県、能代市在住のイラストレーター。<br>
               アクリル絵の具を使用し、手書きで女性たちの日常を描く。<br>
               泣いたり、笑ったり、恋したり……。<br>
               キャラクターの日常を瑞々しくコミカルに表現。
-            </p>
+            </p> -->
+            <p>秋田県、能代市を中心に活動するイラストレーター。<br>
+              アクリル絵の具を使用し、ひとつひとつ手書きで、<br>
+              女性たちの日常や、表情豊かなキャラクターを描く。</p>
+            <p>テレビ番組のタイトルキャッチ、商品ラベル、<br>
+              地元企業・学校のイメージキャラクター制作など、<br>
+              数々のイラストレーション、キャラクターデザインを手がける。</p>
           </div>
         </div>
       </div>
@@ -166,25 +178,25 @@
       </div>
     </div>
     <small class="copyright">
-      <div class="copyright__text">copyright © Ririko Harada. <br class="sp">All right reserved.</div>
+      <div class="copyright__text"><p>copyright © Ririko Harada. <br class="sp">All right reserved.</p></div>
       <div class="copyright__link"><a href="privacy_policy.html">PRIVACY POLICY</a></div>
+      <div class="copyright__disc"><p>本ウェブサイトに掲載された画像、文章、その他著作物の無断転載・転用、機械学習への利用を禁じます。</p></div>
     </small>
   </footer>
 
-  <div id="scroll" class="scroll">
-    <a href="#" class="scroll__image">
+  <div id="page-top" class="scroll">
+    <button class="scroll__image">
       <img src="img/top.png" alt="トップへ戻る">
-    </a>
+    </button>
   </div>
 
 </div>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/16f146a8c0.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
   <script src="script/scr.js"></script>
   <script>
-    document.addEventListener( 'DOMContentLoaded', function () {
+  
   let splide = new Splide( '#image-carousel', {
     type   : 'loop',
     padding: '10%',
@@ -206,7 +218,6 @@
     }
   } );
   insta.mount();
-} );
 
   </script>
 </body>
